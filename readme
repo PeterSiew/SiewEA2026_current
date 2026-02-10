@@ -1,4 +1,6 @@
-Here is the code for "Current policies and historical trends constrain future mass loss from the Greenland Ice Sheet" by Siew et al. 2026
+# When running the code, please fix the directories to fit your machine and current locations
+
+1. Here is the code for "Current policies and historical trends constrain future mass loss from the Greenland Ice Sheet" by Siew et al. 2026
 
 # To construct Figure 1, Figure S1, and Figure S2
 - fig1_figS1_take_one_out_validation_autoregress.py
@@ -21,7 +23,17 @@ Here is the code for "Current policies and historical trends constrain future ma
 # To create Figure S9
 - posteria_model_multiple.py
 
-The following are the codes for preparing data (you don't need to run them as the timeseries, weights are already uploaded)
+2. The following are the saved files (unzip them)
+# The save global-mean timeseries
+- save_gmt.z01
+
+# The save IMBIE Greenland timeseries
+- save_obsSLR.zip
+
+# The save 1,000 parameter list and the weights
+- save_parameters.zip
+
+3. The following are the codes for preparing data (you don't need to run them as the timeseries, weights are already uploaded)
 
 # To creates global-mean surface air temperature timeseries for BEST and ERA5 dataset for Figure S7
 - create_GMT_global_and_Greenland_from_spatial_BEST_ERA5.py
@@ -35,7 +47,10 @@ The following are the codes for preparing data (you don't need to run them as th
 # To create stabalized GMT profiles for Figure 4
 - create_idealized_stabale_GMT_new.py
 
-# The following contrains the functions for reading data and analysis
+# Create save_Y_predict for Figure S9
+- Modify lines 216-217 in fig2_fig3_GMT_SLR_fractional_idealized.py
+
+# The following contains the functions for reading data and analysis
 - functions_read_gmt_training_data_seperate.py
 - tools.py
 
