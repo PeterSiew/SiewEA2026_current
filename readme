@@ -1,1 +1,41 @@
 Here is the code for "Current policies and historical trends constrain future mass loss from the Greenland Ice Sheet" by Siew et al. 2026
+
+# To construct Figure 1, Figure S1, and Figure S2
+- fig1_figS1_take_one_out_validation_autoregress.py
+
+# To construct Figure 2, Figure 3, Figure S3, Table S1 and Table S2
+- fig2_fig3_GMT_SLR_fractional_idealized.py
+
+# To construct Figure 4, Figure S4
+- fig4_idealized_gmt.py
+
+# To construct Figure S5, Figure S6
+- plot_sle_timeseries_four_simulations.py
+
+# To construct Figure S7
+- create_obs_constrain_weight.py
+
+# To create Figure S7
+- create_save_parameters.py
+
+# To create Figure S9
+- posteria_model_multiple.py
+
+The following are the codes for preparing data (you don't need to run them as the timeseries, weights are already uploaded)
+
+# To creates global-mean surface air temperature timeseries for BEST and ERA5 dataset for Figure S7
+- create_GMT_global_and_Greenland_from_spatial_BEST_ERA5.py
+
+# To create global-mean surface air temperature timeseries for CMIP5 four RCPs for all GCMs
+- create_GMT_global_from_timeseries.py
+
+# To create global-mean surface air temperature timeseries from Climate Action tracker's four policy actions for Figure 2
+- create_CATs_Nov2025_new.py
+
+# To create stabalized GMT profiles for Figure 4
+- create_idealized_stabale_GMT_new.py
+
+# The following contrains the functions for reading data and analysis
+- functions_read_gmt_training_data_seperate.py
+- tools.py
+
