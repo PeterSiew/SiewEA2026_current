@@ -16,6 +16,9 @@ Inside the code, please modify the paths to fit your machine. All the necessary 
 # This is the saved 1,000-member parameter ensemble (8 parameters) and their weights (model errors are multiples of 10, 20, 30, 40 of observational errors)
 - save_parameters.zip
 
+# This is the saved PISM simulation timeseries (78 ensemble members in total)
+- save_slr_timeseries.zip
+
 ### Step 2. Run the following figures to construct the figures and perform the relevant analysis. 
 
 # To construct Figure 1, Figure S1, and Figure S2
