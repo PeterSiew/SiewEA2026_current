@@ -1,14 +1,19 @@
 Here are the instructions to perform all analyses and construct all figures for "Current policies and historical trends constrain future mass loss from the Greenland Ice Sheet" by Siew et al. 2026
-Please modify the path to fit your machine.
+Inside the code, please modify the paths to fit your machine. All the necessary files are here. If you encounter any problem, please let me know (send an email to peter.siew@vuw.ac.nz).
 
-### Step 1: Unzip the following zip files to get the necessary training data and GMT timeseries
+### Step 1: Unzip the following files to get the necessary sea-level training timeseries and GMT timeseries
 # This is the global-mean timeseries for BEST, ERA5, CMIP5 and CAT
 - save_gmt.z01
+- save_gmt.z02
+- save_gmt.z03
+- save_gmt.z04
+- save_gmt.z05
+- save_gmt.zip
 
 # This is the saved IMBIE Greenland timeseries
 - save_obsSLR.zip
 
-# This is the saved 1,000 parameter list and their weights (model errors are multiples of 10, 20, 30, 40 of observational errors)
+# This is the saved 1,000-member parameter ensemble (8 parameters) and their weights (model errors are multiples of 10, 20, 30, 40 of observational errors)
 - save_parameters.zip
 
 ### Step 2. Run the following figures to construct the figures and perform the relevant analysis. 
@@ -34,8 +39,7 @@ Please modify the path to fit your machine.
 # To create Figure S9
 - posteria_model_multiple.py
 
-
-### The following are the codes for preparing the saved data mentioned in step #1 (so you don't need to run them if the files are already there)
+### The following are the codes for preparing the saved data mentioned in step #1 (so you don't need to run them if you have downloaded the files)
 
 # To create global-mean surface air temperature timeseries for the BEST and ERA5 datasets for Figure S7
 - create_GMT_global_and_Greenland_from_spatial_BEST_ERA5.py
@@ -49,10 +53,10 @@ Please modify the path to fit your machine.
 # To create stabilized GMT profiles for Figure 4
 - create_idealized_stabale_GMT_new.py
 
-# Create save_Y_predict for Figure S9
+# Create save_Y_predict.npy for Figure S9 (this is not uploaded as it is too big)
 - Modify lines 216-217 in fig2_fig3_GMT_SLR_fractional_idealized.py
 
-### These are the functions for performing the analyses 
+### These are the functions for performing the analyses. Remember to fix the paths linking these files. 
 - functions_read_gmt_training_data_seperate.py
 - tools.py
 
