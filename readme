@@ -1,11 +1,22 @@
-# When running the code, please fix the directories to fit your machine and current locations
+Here are the instructions to perform all analyses and construct all figures for "Current policies and historical trends constrain future mass loss from the Greenland Ice Sheet" by Siew et al. 2026
+Please modify the path to fit your machine.
 
-1. Here is the code for "Current policies and historical trends constrain future mass loss from the Greenland Ice Sheet" by Siew et al. 2026
+### Step 1: Unzip the following zip files to get the necessary training data and GMT timeseries
+# This is the global-mean timeseries for BEST, ERA5, CMIP5 and CAT
+- save_gmt.z01
+
+# This is the saved IMBIE Greenland timeseries
+- save_obsSLR.zip
+
+# This is the saved 1,000 parameter list and their weights (model errors are multiples of 10, 20, 30, 40 of observational errors)
+- save_parameters.zip
+
+### Step 2. Run the following figures to construct the figures and perform the relevant analysis. 
 
 # To construct Figure 1, Figure S1, and Figure S2
 - fig1_figS1_take_one_out_validation_autoregress.py
 
-# To construct Figure 2, Figure 3, Figure S3, Table S1 and Table S2
+# To construct Figure 2, Figure 3, Figure S3, Table S1, and Table S2
 - fig2_fig3_GMT_SLR_fractional_idealized.py
 
 # To construct Figure 4, Figure S4
@@ -23,34 +34,25 @@
 # To create Figure S9
 - posteria_model_multiple.py
 
-2. The following are the saved files (unzip them)
-# The save global-mean timeseries
-- save_gmt.z01
 
-# The save IMBIE Greenland timeseries
-- save_obsSLR.zip
+### The following are the codes for preparing the saved data mentioned in step #1 (so you don't need to run them if the files are already there)
 
-# The save 1,000 parameter list and the weights
-- save_parameters.zip
-
-3. The following are the codes for preparing data (you don't need to run them as the timeseries, weights are already uploaded)
-
-# To creates global-mean surface air temperature timeseries for BEST and ERA5 dataset for Figure S7
+# To create global-mean surface air temperature timeseries for the BEST and ERA5 datasets for Figure S7
 - create_GMT_global_and_Greenland_from_spatial_BEST_ERA5.py
 
 # To create global-mean surface air temperature timeseries for CMIP5 four RCPs for all GCMs
 - create_GMT_global_from_timeseries.py
 
-# To create global-mean surface air temperature timeseries from Climate Action tracker's four policy actions for Figure 2
+# To create the global-mean surface air temperature timeseries from Climate Action Tracker's four policy actions for Figure 2
 - create_CATs_Nov2025_new.py
 
-# To create stabalized GMT profiles for Figure 4
+# To create stabilized GMT profiles for Figure 4
 - create_idealized_stabale_GMT_new.py
 
 # Create save_Y_predict for Figure S9
 - Modify lines 216-217 in fig2_fig3_GMT_SLR_fractional_idealized.py
 
-# The following contains the functions for reading data and analysis
+### These are the functions for performing the analyses 
 - functions_read_gmt_training_data_seperate.py
 - tools.py
 
