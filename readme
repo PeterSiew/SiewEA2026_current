@@ -1,8 +1,8 @@
 Here are the instructions to perform all analyses and construct all figures for "Current policies and historical trends constrain future mass loss from the Greenland Ice Sheet" by Siew et al. 2026
-Inside the code, please modify the paths to fit your machine. All the necessary files are here. If you encounter any problem, please let me know (send an email to peter.siew@vuw.ac.nz).
+Within the scripts, please modify the paths to fit your machine. All the necessary files are here. If you encounter any problem, please let me know (peter.siew@vuw.ac.nz).
 
 ### Step 1: Unzip the following files to get the necessary sea-level training timeseries and GMT timeseries
-# This is the global-mean timeseries for BEST, ERA5, CMIP5 and CAT
+# This is the global-mean timeseries for BEST, ERA5, CMIP5 (including the MIROC5 for training), and CAT
 - save_gmt.z01
 - save_gmt.z02
 - save_gmt.z03
