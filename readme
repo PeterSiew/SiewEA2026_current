@@ -36,13 +36,13 @@ Within the scripts, please modify the paths to fit your machine. All the necessa
 # To construct Figure S7
 - create_obs_constrain_weight.py
 
-# To create Figure S7
+# To create Figure S8
 - create_save_parameters.py
 
 # To create Figure S9
 - posteria_model_multiple.py
 
-### Step 3: The following are the codes for preparing the saved data mentioned in step #1 (so you don't need to run them if you have downloaded the files)
+### Step 3: The following are the codes for preparing the saved data in Step #1 (so you don't need to run them if you have downloaded the files)
 
 # To create global-mean surface air temperature timeseries for the BEST and ERA5 datasets for Figure S7
 - create_GMT_global_and_Greenland_from_spatial_BEST_ERA5.py
