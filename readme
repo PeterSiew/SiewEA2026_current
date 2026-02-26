@@ -19,7 +19,7 @@ Within the scripts, please modify the paths to fit your machine. All the necessa
 # This is the saved PISM simulation timeseries (78 ensemble members in total)
 - save_slr_timeseries.zip
 
-### Step 2. Run the following figures to construct the figures and perform the relevant analysis. 
+### Step 2. Run the following .py files to construct the figures and perform the relevant analysis. 
 
 # To construct Figure 1, Figure S1, and Figure S2
 - fig1_figS1_take_one_out_validation_autoregress.py
