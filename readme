@@ -2,8 +2,34 @@ Update:
 10 July 2026: All zipped files are re-uploaded; I test them, and they are fine to be extracted.
 The codes are also re-uploaded for the latest version and remove the "hard-coded" links.
 
-
 Here are the instructions to perform all analyses and construct all figures for "Current policies and historical trends constrain future mass loss from the Greenland Ice Sheet" by Siew et al. 2026
-Within the scripts, please modify the paths to fit your machine. All the necessary files are here. If you encounter any problem, please let me know (peter.siew@vuw.ac.nz).
+Let me know if there is any problem... (peter.siew@vuw.ac.nz)
+
+Step 1: Unzip all the files and put the unzipped folders in the same folder that contains the "codes" directory
+
+# These are codes to create the figures for the main manuscript:
+fig1_figS1_take_one_out_validation_autoregress.py --> Figure 1
+fig2_fig3_GMT_SLR_fractional_idealized.py --> Figures 2 & Figure 3
+fig4_new_damped_stable_overshoot.py --> Figure 4
+
+# These are codes to create the figures for the supplementary:
+plot_boxplots_CMIP5_and_6_ISMIP6_versus_emulations.py
+plot_posteria_model_multiple_histogram.py
+plot_sle_timeseries_PISM_four_simulations_ISMIP6.py
+realistic_CO2eq_versus_CATS.py
+
+# These are the codes to create the necessary files (You don't need to do this step if you can unzip all files):
+create_GMT_global_and_Greenland_from_spatial_BEST_ERA5.py --> Create GMT for BEST
+create_GMT_global_from_timeseries.py --> Create GMT for CMIP5 and CMIP6
+create_damped_stable_overshoot_GMT_from_2100to2300.py --> Create the damped trends, stabilized, overshoot GMTs
+create_obs_constrain_weight.py --> Create the parameter weights by history calibration
+create_save_parameters.py --> Define the parameter range and create the 1,000 member by Latin hypercube sampling.
+create_CATs_Nov2025_new.py --> Extract GMT from the xls file provided by Climate Action Tracker (Climate Analytics)
+
+
+
+
+
+
 
 
