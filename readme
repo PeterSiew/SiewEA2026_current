@@ -5,7 +5,10 @@ The codes are also re-uploaded for the latest version and remove the "hard-coded
 Here are the instructions to perform all analyses and construct all figures for "Current policies and historical trends constrain future mass loss from the Greenland Ice Sheet" by Siew et al. 2026
 Let me know if there is any problem... (peter.siew@vuw.ac.nz)
 
-Step 1: Unzip all the files and put the unzipped folders in the same folder that contains the "codes" directory
+Step 1: Unzip all the files and put the unzipped folders in the same folder that contains the "codes" folder
+
+Step 2: You need the following Python packages
+Scipy, numpy, scikit-learn, Xarray, Matplotlib, Statsmodel, Python 3.8
 
 # These are codes to create the figures for the main manuscript:
 fig1_figS1_take_one_out_validation_autoregress.py --> Figure 1
