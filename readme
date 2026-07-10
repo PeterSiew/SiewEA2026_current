@@ -16,10 +16,10 @@ fig2_fig3_GMT_SLR_fractional_idealized.py --> Figures 2 & Figure 3
 fig4_new_damped_stable_overshoot.py --> Figure 4
 
 # These are codes to create the figures for the supplementary:
-plot_boxplots_CMIP5_and_6_ISMIP6_versus_emulations.py
-plot_posteria_model_multiple_histogram.py
-plot_sle_timeseries_PISM_four_simulations_ISMIP6.py
-realistic_CO2eq_versus_CATS.py
+plot_boxplots_CMIP5_and_6_ISMIP6_versus_emulations.py --> Figure S6
+plot_posteria_model_multiple_histogram.py --> Figure S13
+plot_sle_timeseries_PISM_four_simulations_ISMIP6.py -->
+realistic_CO2eq_versus_CATS.py --> Figure S5
 
 # These are the codes to create the necessary files (You don't need to do this step if you can unzip all files):
 create_GMT_global_and_Greenland_from_spatial_BEST_ERA5.py --> Create GMT for BEST
