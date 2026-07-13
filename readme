@@ -8,7 +8,7 @@ Let me know if there is any problem... (peter.siew@vuw.ac.nz)
 Step 1: Unzip all the files and put the unzipped folders in the same folder that contains the "codes" folder
 
 Step 2: You need the following Python packages
-numpy, scipy, sklearn, xarray, matplotlib, statsmodels, ipdb, catropy
+numpy, scipy, sklearn, xarray, matplotlib, statsmodels, ipdb, catropy, cftime
 
 # These are codes to create the figures for the main manuscript:
 fig1_figS1_take_one_out_validation_autoregress.py --> Figure 1
