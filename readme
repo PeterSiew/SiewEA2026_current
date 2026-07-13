@@ -5,23 +5,31 @@ The codes are also re-uploaded for the latest version and remove the "hard-coded
 Here are the instructions to perform all analyses and construct all figures for "Current policies and historical trends constrain future mass loss from the Greenland Ice Sheet" by Siew et al. 2026
 Let me know if there is any problem... (peter.siew@vuw.ac.nz)
 
-Step 1: Unzip all the files and put the unzipped folders in the same folder that contains the "codes" folder
+Step 1: 
+# Unzip all the files and put the unzipped folders in the folder that contains the "codes" folder
 
-Step 2: You need the following Python packages
+Step 2: 
+# You need the following Python packages
 numpy, scipy, sklearn, xarray, matplotlib, statsmodels, ipdb, catropy, cftime
 
-# These are codes to create the figures for the main manuscript:
+Step 3: 
+# To run the main figures, you need to have the following in the folder "codes"
 fig1_figS1_take_one_out_validation_autoregress.py --> Figure 1
 fig2_fig3_GMT_SLR_fractional_idealized.py --> Figures 2 & Figure 3
 fig4_new_damped_stable_overshoot.py --> Figure 4
+# You need the following scripts to run them:
+tools_greenland.py
+functions_read_gmt_training_data_seperate.py
 
-# These are codes to create the figures for the supplementary:
+Step 4:
+# These are the codes for supplementary figures
 plot_boxplots_CMIP5_and_6_ISMIP6_versus_emulations.py --> Figure S6
 plot_posteria_model_multiple_histogram.py --> Figure S13
 plot_sle_timeseries_PISM_four_simulations_ISMIP6.py -->
 realistic_CO2eq_versus_CATS.py --> Figure S5
 
-# These are the codes to create the necessary files (You don't need to do this step if you can unzip all files):
+Step 5:
+# These are the codes to create the necessary files (You don't need to run them if you can unzip all files):
 create_GMT_global_and_Greenland_from_spatial_BEST_ERA5.py --> Create GMT for BEST
 create_GMT_global_from_timeseries.py --> Create GMT for CMIP5 and CMIP6
 create_damped_stable_overshoot_GMT_from_2100to2300.py --> Create the damped trends, stabilized, overshoot GMTs
