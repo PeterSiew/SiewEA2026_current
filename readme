@@ -1,12 +1,14 @@
 Update: 
 10 July 2026: All zipped files are re-uploaded; I test them, and they are fine to be extracted.
 The codes are also re-uploaded for the latest version and remove the "hard-coded" links.
+I use another laptop (MacBook Air M1) for testing and successfully run the four main figures and reproduce the results 
 
 Here are the instructions to perform all analyses and construct all figures for "Current policies and historical trends constrain future mass loss from the Greenland Ice Sheet" by Siew et al. 2026
-Let me know if there is any problem... (peter.siew@vuw.ac.nz)
+Let me know if there is any problem (peter.siew@vuw.ac.nz)
 
 Step 1: 
 # Unzip all the files and put the unzipped folders in the folder that contains the "codes" folder
+# Keep the existing file and directory format
 
 Step 2: 
 # You need the following Python packages
@@ -17,9 +19,8 @@ Step 3:
 fig1_figS1_take_one_out_validation_autoregress.py --> Figure 1
 fig2_fig3_GMT_SLR_fractional_idealized.py --> Figures 2 & Figure 3
 fig4_new_damped_stable_overshoot.py --> Figure 4
-# You need the following scripts to run the three scripts above (download them into the same folder):
-tools_greenland.py
-functions_read_gmt_training_data_seperate.py
+tools_greenland.py --> supporting script with some functions
+functions_read_gmt_training_data_seperate.py --> supporting script with some functions
 
 Step 4:
 # These are the codes for supplementary figures
