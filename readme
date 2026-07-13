@@ -17,7 +17,7 @@ Step 3:
 fig1_figS1_take_one_out_validation_autoregress.py --> Figure 1
 fig2_fig3_GMT_SLR_fractional_idealized.py --> Figures 2 & Figure 3
 fig4_new_damped_stable_overshoot.py --> Figure 4
-# You need the following scripts to run them:
+# You need the following scripts to run the three scripts above (download them into the same folder):
 tools_greenland.py
 functions_read_gmt_training_data_seperate.py
 
