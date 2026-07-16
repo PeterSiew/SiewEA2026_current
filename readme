@@ -6,31 +6,40 @@ I use another laptop (MacBook Air M1) for testing and successfully run the four 
 Here are the instructions to perform all analyses and construct all figures for "Current policies and historical trends constrain future mass loss from the Greenland Ice Sheet" by Siew et al. 2026
 Let me know if there is any problem (peter.siew@vuw.ac.nz)
 
-Step 1: 
-# Unzip all the files and put the unzipped folders in the folder that contains the "codes" folder
-# Keep the existing file and directory format
+# Step 1: 
+- Unzip all the files and put the unzipped folders in the folder that contains the "codes" folder
+- Keep the existing file and directory format
 
-Step 2: 
-# You need the following Python packages
-numpy, scipy, sklearn, xarray, matplotlib, statsmodels, ipdb, catropy, cftime
+# Step 2: 
+- You need the following Python packages: numpy, scipy, sklearn, xarray, matplotlib, statsmodels, ipdb, catropy, cftime
 
-Step 3: 
-# To run the main figures, you need to have the following in the folder "codes"
-fig1_figS1_take_one_out_validation_autoregress.py --> Figure 1
-fig2_fig3_GMT_SLR_fractional_idealized.py --> Figures 2 & Figure 3
-fig4_new_damped_stable_overshoot.py --> Figure 4
-tools_greenland.py --> supporting script with some functions
-functions_read_gmt_training_data_seperate.py --> supporting script with some functions
+# To run the main figures (revised manuscript), you need to have the following in the folder "codes". 
+# All the "hard-coded' paths are fixed if you put them in the correct folders
+Figure 1 ==> fig1_figS1_take_one_out_validation_autoregress.py
+Figures 2 & 3 ==> fig2_fig3_GMT_SLR_fractional_idealized.py 
+Figures 4 ==> fig4_new_damped_stable_overshoot.py 
+supporting script with some functions ==> tools_greenland.py 
+supporting script with some functions ==> functions_read_gmt_training_data_seperate.py
 
-Step 4:
-# These are the codes for supplementary figures
-plot_boxplots_CMIP5_and_6_ISMIP6_versus_emulations.py --> Figure S6
-plot_posteria_model_multiple_histogram.py --> Figure S13
-plot_sle_timeseries_PISM_four_simulations_ISMIP6.py -->
-realistic_CO2eq_versus_CATS.py --> Figure S5
+# These are the codes for supplementary figures (revised manuscript). 
+# Some codes overlap with the scripts for the main figures and the scripts in the "create_scripts"
+# The "hard-coded" path still exists. So you need to fix the paths.
+Figures S1 & S2 ==> fig1_figS1_take_one_out_validation_autoregress.py
+Figure S3 ==> fig2_fig3_GMT_SLR_fractional_idealized.py
+Figure S4 ==> fig4_new_damped_stable_overshoot.py 
+Figure S5 ==> realistic_CO2eq_versus_CATS.py --> Figure S5
+Figures S6 & S7 ==> SLR2100_versus_GMT_trends_ISMIP6_emulations_GCM.py &
+plot_boxplots_CMIP5_and_6_ISMIP6_versus_emulations.py &
+se_emulator_to_predict_ISMIP6_save_Y_predict.py
+Figure S8 ==> GMT_versus_Greenland_ice_ocean_forcings.py
+Figures S9 & S10 ==> plot_sle_timeseries_PISM_four_simulations_ISMIP6.py
+Figure S11 ==> /create_scripts/create_obs_constrain_weight.py
+Figure S12 ==> /create_scripts/create_save_parameters.py
+Figure S13 ==> plot_posteria_model_multiple_histogram.py
 
-Step 5:
-# These are the codes to create the necessary files (You don't need to run them if you can unzip all files):
+
+# Scripts inside the folder /codes/create_scritps are used to create the necessary files 
+# You don't need to run them if you can unzip all ".zip" files :
 create_GMT_global_and_Greenland_from_spatial_BEST_ERA5.py --> Create GMT for BEST
 create_GMT_global_from_timeseries.py --> Create GMT for CMIP5 and CMIP6
 create_damped_stable_overshoot_GMT_from_2100to2300.py --> Create the damped trends, stabilized, overshoot GMTs
