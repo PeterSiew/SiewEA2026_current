@@ -1,9 +1,8 @@
-Update: 
-10 July 2026: All zipped files are re-uploaded; I test them, and they are fine to be extracted.
-The codes are also re-uploaded for the latest version and remove the "hard-coded" links.
-I use another laptop (MacBook Air M1) for testing and successfully run the four main figures and reproduce the results 
+Update on 10 July 2026: All zipped files are re-uploaded; they should be fine to extract.
+Some codes are also re-uploaded to remove the "hard-coded" links.
+I use another laptop (MacBook Air M1) for testing and successfully run the four main figures and reproduce the results.
 
-Here are the instructions to perform all analyses and construct all figures for "Current policies and historical trends constrain future mass loss from the Greenland Ice Sheet" by Siew et al. 2026
+Here are the instructions to construct the four main figures for "Current policies and historical trends constrain future mass loss from the Greenland Ice Sheet" by Siew et al. 2026
 Let me know if there is any problem (peter.siew@vuw.ac.nz)
 
 # Step 1: 
@@ -18,12 +17,12 @@ Let me know if there is any problem (peter.siew@vuw.ac.nz)
 Figure 1 ==> fig1_figS1_take_one_out_validation_autoregress.py
 Figures 2 & 3 ==> fig2_fig3_GMT_SLR_fractional_idealized.py 
 Figures 4 ==> fig4_new_damped_stable_overshoot.py 
-supporting script with some functions ==> tools_greenland.py 
-supporting script with some functions ==> functions_read_gmt_training_data_seperate.py
+supporting script ==> tools_greenland.py 
+supporting script ==> functions_read_gmt_training_data_seperate.py
 
 # These are the codes for supplementary figures (revised manuscript). 
 # Some codes overlap with the scripts for the main figures and the scripts in the "create_scripts"
-# The "hard-coded" path still exists. So you need to fix the paths.
+# The "hard-coded" paths still exist. So you need to fix them first before running.
 Figures S1 & S2 ==> fig1_figS1_take_one_out_validation_autoregress.py
 Figure S3 ==> fig2_fig3_GMT_SLR_fractional_idealized.py
 Figure S4 ==> fig4_new_damped_stable_overshoot.py 
@@ -36,7 +35,6 @@ Figures S9 & S10 ==> plot_sle_timeseries_PISM_four_simulations_ISMIP6.py
 Figure S11 ==> /create_scripts/create_obs_constrain_weight.py
 Figure S12 ==> /create_scripts/create_save_parameters.py
 Figure S13 ==> plot_posteria_model_multiple_histogram.py
-
 
 # Scripts inside the folder /codes/create_scritps are used to create the necessary files 
 # You don't need to run them if you can unzip all ".zip" files :
