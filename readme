@@ -29,7 +29,7 @@ Figure S4 ==> fig4_new_damped_stable_overshoot.py
 Figure S5 ==> realistic_CO2eq_versus_CATS.py --> Figure S5
 Figures S6 & S7 ==> SLR2100_versus_GMT_trends_ISMIP6_emulations_GCM.py &
 plot_boxplots_CMIP5_and_6_ISMIP6_versus_emulations.py &
-se_emulator_to_predict_ISMIP6_save_Y_predict.py
+use_emulator_to_predict_ISMIP6_save_Y_predict.py
 Figure S8 ==> GMT_versus_Greenland_ice_ocean_forcings.py
 Figures S9 & S10 ==> plot_sle_timeseries_PISM_four_simulations_ISMIP6.py
 Figure S11 ==> /create_scripts/create_obs_constrain_weight.py
